@@ -1,0 +1,66 @@
+{
+  "name": "@dogstudio/dogstudio-vue-starter",
+  "version": "1.0.0-beta.2",
+  "license": "MIT",
+  "private": true,
+  "homepage": "https://github.com/Dogstudio/dogstudio-vue-starter",
+  "description": "Opinionated Vue starter by Dogstudio",
+  "scripts": {
+    "dev": "vite --host",
+    "lint": "eslint --ext \".vue,.ts,.js,.tsx,.jsx\" .",
+    "build": "vite build",
+    "start": "vite preview",
+    "upgrade": "ncu && npm i",
+    "texture-lods": "./tasks/texture-lods.sh",
+    "texture-orms": "sh ./tasks/texture-orms.sh",
+    "model": "node ./tasks/pipeline-tools/models/colada2bin.js"
+  },
+  "engineStrict": true,
+  "engines": {
+    "npm": ">= 6.14.0",
+    "node": ">=14.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/Dogstudio/dogstudio-vue-starter/issues",
+    "email": "devops@dogstudio.be"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Dogstudio/dogstudio-vue-starter.git"
+  },
+  "browserslist": [
+    "last 2 version",
+    "not ie > 0",
+    "not bb > 0",
+    "not kaios > 0",
+    "not baidu > 0",
+    "not ie_mob > 0",
+    "not op_mini all"
+  ],
+  "dependencies": {
+    "@loaders.gl/core": "^3.4.14",
+    "@loaders.gl/gltf": "^3.4.14",
+    "ejs": "^3.1.9",
+    "event-emitter": "^0.3.5",
+    "gl-matrix": "^3.4.3",
+    "gsap": "^3.12.2",
+    "vue": "^3.3.4",
+    "vue-router": "^4.2.4"
+  },
+  "devDependencies": {
+    "@tweakpane/plugin-essentials": "^0.2.0",
+    "@vitejs/plugin-vue": "^4.3.4",
+    "@vitejs/plugin-vue-jsx": "^3.0.2",
+    "eslint": "^8.49.0",
+    "eslint-config-prettier": "^8.10.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^8.7.1",
+    "firebase": "^9.23.0",
+    "prettier": "^2.8.8",
+    "sass": "^1.67.0",
+    "tweakpane": "^4.0.1",
+    "vite": "^4.4.9",
+    "vite-plugin-glsl": "^0.2.2",
+    "xml2js": "^0.4.23"
+  }
+}
